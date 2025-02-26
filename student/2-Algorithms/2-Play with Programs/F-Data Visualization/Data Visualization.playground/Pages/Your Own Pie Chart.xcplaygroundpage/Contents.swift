@@ -7,7 +7,13 @@
  */
 makePieChart()
 
+addWedge(withProportion: 0.5, color: .blue)
+addKeyItem(withLabel: "Men", color: .blue)
 
+addWedge(withProportion: 0.25, color: .purple)
+addKeyItem(withLabel: "Women", color: .purple)
 
+addWedge(withProportion: 0.25, color: .green)
+addKeyItem(withLabel: "Other", color: .green)
 //: [Previous](@previous)  |  page 4 of 11  |  [Next: Bar Charts](@next)
     

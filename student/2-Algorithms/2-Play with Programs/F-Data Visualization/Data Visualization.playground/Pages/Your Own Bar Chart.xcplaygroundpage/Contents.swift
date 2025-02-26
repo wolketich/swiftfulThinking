@@ -7,6 +7,12 @@
  */
 makeBarChart()
 
+setYAxis(minimum: 10, maximum: 30)
+
+addBar(withLength: 24, color: .black)
+
+
+addBar(withLength: 15, color: .gray)
 
 
 /*:
