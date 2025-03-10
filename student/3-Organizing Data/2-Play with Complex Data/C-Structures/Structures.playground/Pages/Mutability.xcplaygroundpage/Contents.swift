@@ -19,7 +19,7 @@ struct Song {
     var rating: Int
 }
 //: This step alone isn’t enough to make the `rating` property on every `Song` instance mutable. The struct must also be assigned to a variable:
-var song = Song(title: "No, no, no", artist: "Fizz", duration: 150, rating: 0)
+let song = Song(title: "No, no, no", artist: "Fizz", duration: 150, rating: 0)
 song.rating
 song.rating = 4
 song.rating

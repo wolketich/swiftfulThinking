@@ -7,7 +7,10 @@
 
  - callout(Exercise): Option-click the two arrays below and look at their types
  */
-let grades = ["A", "B", "C", "D", "E"]
+let grades = [["A", "B", "C", "D", "E"],["A", "B", "C", "D", "E"]]
+
+grades.count
+
 let starRatings = [1, 2, 3, 4, 5]
 /*:
  The `[` and `]` brackets tell you that it's an array type. Between the brackets is the name of the type of elements the array holds.

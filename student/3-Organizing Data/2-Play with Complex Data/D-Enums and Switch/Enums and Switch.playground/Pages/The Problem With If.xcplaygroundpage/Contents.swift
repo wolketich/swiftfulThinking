@@ -29,7 +29,7 @@
  Rewriting the function to use each specific case doesn't help the situation much:
  */
 enum LunchChoice {
-    case pasta, burger, soup
+    case pasta, burger, soup, vegs
 }
 
 func cookLunch(_ choice: LunchChoice) -> String {
@@ -42,7 +42,10 @@ func cookLunch(_ choice: LunchChoice) -> String {
     }
     return "Umm... how did we get here?"
 }
-cookLunch(.soup)
+
+var vladPicks: LunchChoice = .vegs
+
+cookLunch(vladPicks)
 /*:
  You still need the final `return` statement. Otherwise the function causes an error because it can’t be sure you’ve covered all the possible cases in the if statements.
 

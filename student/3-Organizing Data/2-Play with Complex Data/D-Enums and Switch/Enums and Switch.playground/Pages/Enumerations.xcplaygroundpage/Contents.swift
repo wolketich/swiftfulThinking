@@ -25,9 +25,11 @@ let choice = LunchChoice.burger
 One benefit of an enum is it limits the choices to one of its cases. You can’t order off-menu.\
 Uncomment the line below to see the error, then comment it out again when you’re done:
  */
-//let special = LunchChoice.fish
-//:  - Experiment: You and your friends are going out for lunch. Create constants for each person and assign them different cases in the enum. Notice how autocompletion shows you the possible options.
 
+//:  - Experiment: You and your friends are going out for lunch. Create constants for each person and assign them different cases in the enum. Notice how autocompletion shows you the possible options.
+let davidPicks = LunchChoice.burger
+let janePicks: LunchChoice = .soup
+let andrewPicks: LunchChoice = .pasta
 /*:
  Next learn about how the type system understands enums.\
 [Previous](@previous)  |  page 3 of 21  |  [Next: Enums and Type Inference](@next)

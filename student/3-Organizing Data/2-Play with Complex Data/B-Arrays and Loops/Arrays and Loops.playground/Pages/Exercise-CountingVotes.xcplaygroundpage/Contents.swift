@@ -20,7 +20,24 @@ This is also a lot of votes for Swift to use type inference to determine what ki
  
 //:  - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:  - callout(Exercise): Create a `for…in` loop that iterates over one of the vote arrays and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
+var countYesForMascotChange: Int = Int()
+var countNoForMascotChange: Int = 0
 
+for vote in shouldMascotChangeVotes {
+    if vote {
+        countYesForMascotChange += 1
+    } else {
+        countNoForMascotChange += 1
+    }
+}
+
+if countYesForMascotChange > countNoForMascotChange {
+    print("Mascot should change.")
+} else if countYesForMascotChange < countNoForMascotChange {
+    print("Mascout should not change.")
+} else {
+    print("Mascot Vote was a tie.")
+}
 //:  - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
 
 /*:
@@ -42,7 +59,22 @@ Which measures won by popular vote?
  `Should we change the mascot? 54 yes, 23 no`
  */
 // Add your vote-processing function here:
+func printResult(forIssue: String, withVote: [Bool]) -> String {
+    var countYes: Int = 0
+    var countNo: Int = 0
+    
+    for vote in withVote {
+        if vote {
+            countYes += 1
+        } else {
+            countNo += 1
+        }
+    }
+    
+    return forIssue + " \(countYes) yes, \(countNo) no"
+}
 
+printResult(forIssue: "Should mascote change?", withVote: shouldMascotChangeVotes)
 /*:
 [Previous](@previous)  |  page 15 of 18  |  [Next: Exercise: Goals](@next)
  */

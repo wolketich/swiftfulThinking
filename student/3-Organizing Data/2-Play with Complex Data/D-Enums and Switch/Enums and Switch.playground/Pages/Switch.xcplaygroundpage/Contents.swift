@@ -23,6 +23,15 @@ switch choice {
     case .soup:
         "🍲"
 }
+
+var number: Int = 23
+
+switch number {
+case 23:
+    "This is a special number!"
+default:
+    "This is not a special number."
+}
 /*:
  The switch statement looks very much like the enum declaration above. That’s because they’re designed to work well together.
  

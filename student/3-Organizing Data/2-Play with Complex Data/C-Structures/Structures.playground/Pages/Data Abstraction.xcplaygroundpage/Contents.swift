@@ -12,10 +12,11 @@ let songTitles = ["Ooh yeah", "Maybe", "No, no, no", "Makin' up your mind"]
 let artists = ["Brenda and the Del-chords", "Brenda and the Del-chords", "Fizz", "Boom!"]
 let durations = [90, 200, 150, 440]
 
-func songInformation(/* supply parameters here*/) -> String {
+func songInformation(title: String, artist: String, duration: Int) -> String {
     /* Return a string describing the song,
      e.g. "\"Maybe\" by Brenda and the Del-chords, duration 200 seconds"
      */
+    return "\"\(title)\" by \(artist), duration \(duration) seconds"
 }
 
 for i in 0 ... songTitles.count - 1 {
@@ -32,14 +33,20 @@ struct Song {
     let title: String
     let artist: String
     let duration: Int
+    let starRating: Int
 }
 //:- callout(Exercise): Below, use the `Song` struct from the previous page to simplify your code.
 /* Create the array of songs here */
+var songList: [Song] = [Song(title: "Song1", artist: "Artist1", duration: 50), Song(title: "Song2", artist: "Artist2", duration: 75)]
 
 /* Declare the songInformation function here */
-
+func songInformation(song: Song) -> String {
+    return "\(song.title) by \(song.artist): \(song.duration) seconds"
+}
 /* Write a for...in loop here */
-
+for song in songList {
+    print(songInformation(song: song))
+}
 /*:
  With the `Song` struct, you could add a star rating simply by adding a new property: `let starRating: Int`. Your initializers will automatically warn you that you're not passing enough arguments. Your `informationFor` function will be easy to modify. And you won't have to update your loop at all!
  

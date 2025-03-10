@@ -8,7 +8,7 @@
 
 var bank = PiggyBank()
 
-bank.deposit(pennies: 1)
+bank.deposit(pennies: 120)
 bank.balance()
 bank.withdraw(pennies: 1)
 bank.balance()

@@ -5,7 +5,7 @@
 
  Array literals are lists of items, separated by commas, with the whole thing inside square brackets:
  */
-let devices = ["iPhone", "iPad", "iPod", "iMac"]
+let devices: [String] = ["iPhone", "iPad", "iPod", "iMac"]
 /*:
  Hover over the list in the results sidebar and use the rectangular Show Result button to add the array inline to the playground. In the inline view you can see that each item in the array is listed in the order it was added to the literal.
 
@@ -15,7 +15,7 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  - Experiment: Create a new constant named `highScores` below and assign it an array containing a list of ten numbers.
  */
 // Define highScores array below
-
+let highScores = [15, 24, 36, 12, 11, 32, 33, 9, 54, 22]
 /*:
  Move on to the next page to find out about what those numbers are for.
 

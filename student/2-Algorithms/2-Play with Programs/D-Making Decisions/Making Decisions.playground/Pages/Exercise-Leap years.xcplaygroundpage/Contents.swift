@@ -18,7 +18,15 @@
 func isLeapYear(_ year: Int) -> Bool {
     // Is the year divisible by 4?
     if number(year, isDivisibleBy: 4) {
-        return true
+        if number(year, isDivisibleBy: 100) {
+            if number(year, isDivisibleBy: 400) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return true
+        }
     } else {
         return false
     }
@@ -45,7 +53,17 @@ _**Hint**_: Try using the rules as pseudocode by making them into comments. Then
 _**Hint**_: Create constants that represent the three key conditions, and then compose a Boolean expression with those constants.
  */
 func isLeapYear2(_ year: Int) -> Bool {
+        return year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
 }
+
+// Should be true
+isLeapYear2(2000)
+// Should be false
+isLeapYear2(1900)
+// Should be true
+isLeapYear2(2012)
+// Should be false
+isLeapYear2(2017)
 /*:
   _Copyright © 2021 Apple Inc._
  

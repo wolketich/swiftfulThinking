@@ -13,7 +13,7 @@
  - callout(Exercise): The `/// - Note:` lines are currently empty. Add information to each line that indicates its limitations.
  */
 /// Represents a piggy bank that holds only pennies.
-/// - Note:
+/// - Note: MinValue = 0, MaxValue = 255
 class PiggyBank {
     private var pennies: UInt8 = 0
     
@@ -28,14 +28,14 @@ class PiggyBank {
     
     /// Deposits pennies into the bank.
     /// - Parameter pennies: the number of pennies to deposit.
-    /// - Note:
+    /// - Note: MaxValue you can hold in a PiggyBank is 255, check balance before depositing
     func deposit(pennies: UInt8) {
         self.pennies += pennies
     }
     
     /// Withdraws pennies from the bank.
     /// - Parameter pennies: the number of pennies to withdraw.
-    /// - Note:
+    /// - Note: MinValue you can have in a PiggyBank is 0, check balance, to ensure enough money is in the bank
     func withdraw(pennies: UInt8) {
         self.pennies -= pennies
     }

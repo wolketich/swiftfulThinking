@@ -10,9 +10,12 @@ Below the declaration of `friendPlans`, update `myPlans` by using the addition o
 Check the values of `myPlans` and `friendPlans`. Are they the same or different?
  */
 // Create your variables here:
-
+var myPlans = "Going to Beach.\n"
+var friendPlans = myPlans
 // Update `myPlans` here:
+myPlans += "Goint to Supermarket.\n"
 
+friendPlans
 /*:
  - callout(Exercise): 
  Create a function `addDance` that takes a string, appends a phrase about dancing (like `"and then we dance!"` or `"but no dancing"`, according to your taste), and returns the new string.\

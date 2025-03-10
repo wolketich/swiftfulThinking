@@ -9,7 +9,7 @@
 
  - callout(Exercise): Option-click the values and methods below to view the documentation in a popup.
  */
-let example = "It was the best of times"
+let example: String = "It was the best of times"
 example.hasPrefix("It was")
 example.hasSuffix("times")
 example.isEmpty

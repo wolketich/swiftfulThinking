@@ -13,9 +13,9 @@
 
  - callout(Exercise): Use the autocompletion popup to access the `isEmpty`, `hasPrefix`, and `hasSuffix` properties and methods of `example`. Try using the keyboard to select options.
  */
-let example = "It was the best of times"
+let example = "123"
 // Practice here by typing . after "example":
-example
+example.debugDescription
 
 
 

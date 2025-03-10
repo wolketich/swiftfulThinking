@@ -30,6 +30,8 @@ let nineTimesTen = 9 * 10
 
 hundred == tenTimesTen
 hundred == nineTimesTen
+
+"vlad" == "Vlad"
 //:  - Experiment: Try some comparisons of your own. Can you check if two string values are equal?
 
 /*:

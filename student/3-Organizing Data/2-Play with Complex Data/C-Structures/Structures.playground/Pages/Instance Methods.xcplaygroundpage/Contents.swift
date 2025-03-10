@@ -9,10 +9,12 @@ struct Rectangle {
     let width: Int
     let height: Int
     
+    var area: Int {
+        return width * height
+    }
+    
     func isBiggerThan(_ rectangle: Rectangle) -> Bool {
-        let areaOne = width * height
-        let areaTwo = rectangle.width * rectangle.height
-        return areaOne > areaTwo
+        return area > rectangle.area
     }
 }
 
@@ -36,7 +38,9 @@ struct Song {
     let artist: String
     let duration: Int
 
-    /* Code from page 6 here, plus the new method */
+    func isLongerThan(_ other: Song) -> Bool {
+        return duration > other.duration
+    }
 }
 
 let songs = [
@@ -46,6 +50,7 @@ let songs = [
     Song(title: "Makin' up your mind", artist: "Boom!", duration: 440)
 ]
 
+songs[0].isLongerThan(songs[1])
 
 /*:
  Instance methods are just like computed properties in the way they enable data abstraction.

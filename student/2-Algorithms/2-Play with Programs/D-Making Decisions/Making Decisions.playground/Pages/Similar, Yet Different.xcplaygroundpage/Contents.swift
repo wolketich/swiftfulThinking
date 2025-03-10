@@ -15,18 +15,18 @@
  - B's are between 80 and 89.
  - A's are 90 or greater.
  */
-let grade = 47
+let grade = 90
 
 if grade < 70 {
     print("You got an F 😭")
 }
-if grade >= 70 {
+else if grade >= 70 {
     print("You got a C 😕")
 }
-if grade >= 80 {
+else if grade >= 80 {
     print("You got a B 😌")
 }
-if grade >= 90 {
+else if grade >= 90 {
     print("You got an A 🤩")
 }
 /*:
@@ -38,9 +38,9 @@ if grade >= 90 {
  
  "If a gig is more than 20 miles away, our manager needs to bring something for me to read. If it's less than five miles away, tell them I'll leave extra early to exercise and get some steps in. But if it's more than 100 miles away, I'm not really interested in playing—they should find a sub for me. Otherwise I'm super low maintenance."
  */
-let gigDistance = 6
+let gigDistance = 50
 
-if gigDistance > 20 {
+if gigDistance > 20 && gigDistance <= 100 {
     print("I need something to read.")
 } else if gigDistance < 5 {
     print("I'll meet you there.")

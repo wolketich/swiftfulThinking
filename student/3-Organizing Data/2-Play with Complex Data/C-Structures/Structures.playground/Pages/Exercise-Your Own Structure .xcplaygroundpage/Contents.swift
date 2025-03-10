@@ -32,6 +32,7 @@ struct TrainingShoe {
     var isTied: Bool
     var laces: Shoelaces
 
+    
     func squeak() {
         // Make a loud noise like rubber squealing on a gym floor
     }

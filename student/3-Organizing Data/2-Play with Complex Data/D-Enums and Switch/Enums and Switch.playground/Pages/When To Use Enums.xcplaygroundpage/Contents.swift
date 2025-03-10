@@ -22,6 +22,23 @@
 
  - callout(Exercise): Define enums to represent the team and position options. Check on the previous pages for a refresher on the syntax.
  */
+enum Team {
+    case read
+    case blue
+}
+
+enum Position {
+    case quarterback
+    case seeker
+    case pitcher
+}
+
+struct Player {
+    let name: String
+    var skillLevel: Int
+    var team: Team
+    var position: Position
+}
 
 /*:
 On the next page, learn about comparing enums.\
